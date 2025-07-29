@@ -13,7 +13,7 @@ local petTable = {
     ["Rare Egg"] = { "Pig", "Monkey", "Rooster", "Orange Tabby", "Spotted Deer" },
     ["Legendary Egg"] = { "Cow", "Polar Bear", "Sea Otter", "Turtle", "Silver Monkey" },
     ["Mythical Egg"] = { "Grey Mouse", "Brown Mouse", "Squirrel", "Red Giant Ant" },
-    ["Bug Egg"] = { "Snail", "Caterpillar", "Giant Ant", "Praying Mantis" },
+    ["Bug Egg"] = { "Snail", "Caterpillar", "Giant Ant", "Dragonfly" },
     ["Night Egg"] = { "Frog", "Hedgehog", "Mole", "Echo Frog", "Night Owl", },
     ["Bee Egg"] = { "Bee", "Honey Bee", "Bear Bee", "Petal Bee" },
     ["Anti Bee Egg"] = { "Wasp", "Moth", "Tarantula Hawk" },
@@ -243,13 +243,6 @@ autoBtn.Text = "🔁 Auto Randomize: OFF"
 autoBtn.TextSize = 16
 autoBtn.Font = Enum.Font.FredokaOne
 autoBtn.TextColor3 = Color3.new(1, 1, 1)
-
-local autoRunning = false
-local bestPets = {
-    ["Raccoon"] = true, ["Dragonfly"] = true, ["Queen Bee"] = true,
-    ["Disco Bee"] = true, ["Fennec Fox"] = true, ["Fox"] = true,
-    ["Mimic Octopus"] = true
-}
 
 autoBtn.MouseButton1Click:Connect(function()
     autoRunning = not autoRunning
